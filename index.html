@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+
+  <style>
+    body {
+      padding-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: antiquewhite;
+      padding: 10px 0;
+    }
+
+    footer a {
+      color: black;
+    }
+  </style>
+  
+  <title>Registro de Finanzas</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Finanzas</h1>
+    
+    <!-- FORMULARIO -->
+    
+    <form>
+      <div class="row">
+        <div class="four columns">
+          <!-- SELECT PARA SELECCCIONAR CREDITO / DEBITO -->
+          <label for="creditDebitSelect">Crédito / Débito</label>
+          <select
+            class="u-full-width"
+            id="creditDebitSelect"
+            required
+          >
+            <option value="Option 1">Crédito</option>
+            <option value="Option 2">Débito</option>
+          </select>
+        </div>
+        <div class="four columns">
+          <!-- INPUT PARA DE / HACIA -->
+          <label for="toFromInput">De / Hacia</label>
+          <input
+            class="u-full-width"
+            type="text"
+            placeholder="Nombre de la persona o entidad"
+            id="toFromInput"
+            required
+          >
+        </div>
+        <div class="four columns">
+          <!-- INPUT PARA Cantidad ($) -->
+          <label for="amountInput">Cantidad ($)</label>
+          <input
+            class="u-full-width"
+            type="number"
+            placeholder="1000"
+            id="amountInput"
+            required
+          >
+        </div>
+      </div>
+      <label for="details">Detalles</label>
+      <textarea class="u-full-width" placeholder="Detalles" id="details"></textarea>
+      <!-- INPUT PARA RESPALDO CORREO ELECTRONICO -->
+      <label class="example-send-yourself-copy">
+        <input type="checkbox">
+        <span class="label-body">Respaldo por correo electrónico</span>
+      </label>
+      <input class="button-primary" type="submit" value="Agregar">
+    </form>
+
+    <!-- TABLA CON TRANSACCIONES -->
+
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Crédito / Débito</th>
+          <th>De / Hacia</th>
+          <th>Cantidad ($)</th>
+          <th>Detalles</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Crédito</td>
+          <td>Dave Gamache</td>
+          <td>- 250</td>
+          <td>Concierto</td>
+        </tr>
+        <tr>
+          <td>Débito</td>
+          <td>Dwayne Johnson</td>
+          <td>+ 100</td>
+          <td>Entrenamiento</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Total: -$150</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+      <a href="https://www.youtube.com/c/webtoriales" target="_blank" rel=”noreferrer”>Webtoriales</a>
+    </footer>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
