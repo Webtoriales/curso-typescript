@@ -10,7 +10,7 @@
 
 // any
 
-// let year;
+// let year: any;
 
 // year = 2021;
 // year = true;
