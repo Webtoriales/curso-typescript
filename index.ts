@@ -1,13 +1,5 @@
-console.log('hola mundo!!!');
+// number, string, boolean
 
-const htmlBody = document.querySelector('body');
+// any
 
-console.log(htmlBody);
-
-const channel = 'webtoriales';
-
-console.log(channel);
-
-let year = 2021;
-
-year = 1999;
+// union

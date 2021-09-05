@@ -1,12 +1,7 @@
 # Curso de Typescript en Webtoriales
 
 
-## ¿Qué es TypeScript?
+## Tipos de Datos básicos
 
-### - Lenguaje de programación de Microsoft (2012)
-### - Es un superconjunto de JavaScript.
-### - Programa válido Javascript --> Programa válido en Typescript
-### - Añade sistema de tipado estático
-### - Tipado estático vs dinámico
-
-
+### - Sistema de tipado --> Tipos | Tipos de Datos
+### - Tipos primitivos --> Javascript: number, string, boolean
