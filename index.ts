@@ -1,27 +1,23 @@
-// number, string, boolean
+const arr = [];
 
-// let myName = 'webtoriales';
-// let year = 2021;
-// let isCool = true;
+arr.push('hola mundo');
+arr.push(2021);
+arr.push({});
 
-// myName = 2021;
-// year = false;
-// isCool = 'webtoriales';
+const numbers = [1, 2, 3];
 
-// any
+numbers.push(4);
+numbers.push(5);
+// numbers.push('six');
 
-// let year: any;
+const moreNumbers = [1, 'two', 3];
 
-// year = 2021;
-// year = true;
-// year = 'webtoriales'
+moreNumbers.push(4);
+moreNumbers.push('five');
+// moreNumbers.push(true);
 
-// union
+const names = ['thor', 'wanda', 'tony'];
 
-let year: string | number | boolean;
-
-year = 2021;
-year = '2021';
-year = false;
-year = [];
-year = {};
+numbers.forEach(name => {
+  console.log(name.toUpperCase());
+});
