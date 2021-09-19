@@ -11,7 +11,7 @@ let obj: object;
 
 // obj = { hola: 'mundo' };
 // obj = { test: false };
-// obj.age - 20;
+// obj.age = 20;
 // obj = { test: false, age: 20 };
 // obj = [1, 2, 3];
 
