@@ -1,23 +1,33 @@
-const arr = [];
+let channel = { name: 'webtoriales' };
 
-arr.push('hola mundo');
-arr.push(2021);
-arr.push({});
+// channel.subscribers = 1700;
 
-const numbers = [1, 2, 3];
+// channel = { age: 3 };
+// channel = { name: true };
+// channel = { name: 'otro canal'};
 
-numbers.push(4);
-numbers.push(5);
-// numbers.push('six');
+// channel.name = 40;
 
-const moreNumbers = [1, 'two', 3];
+// let obj: object;
 
-moreNumbers.push(4);
-moreNumbers.push('five');
-// moreNumbers.push(true);
+// obj = { hola: 'mundo' };
+// obj = { test: true };
+// obj.age = 20;
+// obj = [1, 2, 3];
 
-const names = ['thor', 'wanda', 'tony'];
+let superHero: { 
+  name: string,
+  age: number,
+  superpowers: string[] 
+};
 
-numbers.forEach(name => {
-  console.log(name.toUpperCase());
-});
+superHero = {
+  name: 'wanda',
+  age: 30,
+  superpowers: ['usar magia', 'volar']
+};
+
+superHero.name = 'Wanda';
+superHero.age = 29;
+superHero.superpowers.push('telequinesis');
+// superHero.superpowers.push(true);
