@@ -1,23 +1,44 @@
-const arr = [];
+// Funciones como Tipo de Dato
 
-arr.push('hola mundo');
-arr.push(2021);
-arr.push({});
+let testFunction: Function = () => {
+  console.log('soy una funcion de prueba')
+}
 
-const numbers = [1, 2, 3];
+// testFunction = 10;
 
-numbers.push(4);
-numbers.push(5);
-// numbers.push('six');
+let anotherFunction = () => {
+  console.log('soy otra funcion de prueba')
+}
 
-const moreNumbers = [1, 'two', 3];
+// Valores retornados por Funciones
 
-moreNumbers.push(4);
-moreNumbers.push('five');
-// moreNumbers.push(true);
+let voidFunction = () => {
+  console.log('soy una funcion que devuelve void')
+}
+// let a: number = voidFunction();
 
-const names = ['thor', 'wanda', 'tony'];
+let twoPlusTwo = () => {
+  return 2 + 2;
+}
 
-numbers.forEach(name => {
-  console.log(name.toUpperCase());
-});
+let b = twoPlusTwo();
+
+// Pasando valores como parametros
+
+let double = (num: number) => {
+  return num * 2;
+}
+
+let c = double(2);
+let d = double(6);
+// let e = double('webtoriales');
+// console.log(e);
+
+let concat = (a: string, b: string, reverse: boolean = false) => {
+  if (reverse) {
+    return b + a;
+  }
+  return a + b;
+}
+
+let result = concat('webtoriales', 'es genial');

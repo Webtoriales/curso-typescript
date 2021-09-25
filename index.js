@@ -1,16 +1,25 @@
-var arr = [];
-arr.push('hola mundo');
-arr.push(2021);
-arr.push({});
-var numbers = [1, 2, 3];
-numbers.push(4);
-numbers.push(5);
-// numbers.push('six');
-var moreNumbers = [1, 'two', 3];
-moreNumbers.push(4);
-moreNumbers.push('five');
-// moreNumbers.push(true);
-var names = ['thor', 'wanda', 'tony'];
-names.forEach(function (name) {
-    console.log(name.toUpperCase());
-});
+// Funciones como Tipo de Dato
+var testFunction = function () {
+    console.log('soy una funcion de prueba');
+};
+// testFunction = 10;
+var anotherFunction = function () {
+    console.log('soy otra funcion de prueba');
+};
+// Valores retornados por Funciones
+var voidFunction = function () {
+    console.log('soy una funcion que devuelve void');
+};
+// let a: number = voidFunction();
+var twoPlusTwo = function () {
+    return 2 + 2;
+};
+var b = twoPlusTwo();
+// Pasando valores como parametros
+var double = function (num) {
+    return num * 2;
+};
+var c = double(2);
+var d = double(6);
+var e = double('webtoriales');
+console.log(e);
