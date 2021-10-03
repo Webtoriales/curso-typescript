@@ -4,8 +4,8 @@ type Channel = {
   id: ID,
   name: string,
   subscribers: number,
-  year: Year,
-};
+  year: Year
+}
 
 const getChannelName = (id: ID) => {
   console.log(`El canal con id ${id} se llama Webtoriales`);
@@ -16,7 +16,7 @@ const getChannelInfo = (channel: Channel) => {
 }
 
 const subscribeToChannel = (channel: Channel) => {
-  console.log(`Te has suscrito a ${channel.name}.`);
+  console.log(`Te has suscrito a ${channel.name}`);
 }
 
 const webtoriales: Channel = {
