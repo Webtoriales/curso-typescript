@@ -1,25 +1,10 @@
-// Funciones como Tipo de Dato
-var testFunction = function () {
-    console.log('soy una funcion de prueba');
+var getChannelName = function (id) {
+    console.log("El canal con id " + id + " se llama Webtoriales");
 };
-// testFunction = 10;
-var anotherFunction = function () {
-    console.log('soy otra funcion de prueba');
+var getChannelInfo = function (channel) {
+    console.log(channel.name + " tiene " + channel.subscribers + " suscriptores y fue creado en " + channel.year);
 };
-// Valores retornados por Funciones
-var voidFunction = function () {
-    console.log('soy una funcion que devuelve void');
-};
-// let a: number = voidFunction();
-var twoPlusTwo = function () {
-    return 2 + 2;
-};
-var b = twoPlusTwo();
-// Pasando valores como parametros
-var double = function (num) {
-    return num * 2;
-};
-var c = double(2);
-var d = double(6);
-var e = double('webtoriales');
-console.log(e);
+getChannelName(123);
+getChannelName('123');
+var webtoriales = { id: 123, name: 'webtoriales', subscribers: 1800, year: 2019 };
+getChannelInfo(webtoriales);

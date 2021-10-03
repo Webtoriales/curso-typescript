@@ -1,44 +1,24 @@
-// Funciones como Tipo de Dato
+type ID = string | number;
 
-let testFunction: Function = () => {
-  console.log('soy una funcion de prueba')
+const getChannelName = (id: ID) => {
+  console.log(`El canal con id ${id} se llama Webtoriales`);
 }
 
-// testFunction = 10;
-
-let anotherFunction = () => {
-  console.log('soy otra funcion de prueba')
+const getChannelInfo = (channel: { id: ID, name: string, subscribers: number, year: ID }) => {
+  console.log(`${channel.name} tiene ${channel.subscribers} suscriptores y fue creado en ${channel.year}`);
 }
 
-// Valores retornados por Funciones
+const webtoriales = {
+  id: 123,
+  name: 'webtoriales',
+  subscribers: 1800,
+  year: 2019,
+};
 
-let voidFunction = () => {
-  console.log('soy una funcion que devuelve void')
-}
-// let a: number = voidFunction();
+getChannelName('123');
+getChannelName(456);
+getChannelName(webtoriales.id);
+getChannelInfo(webtoriales);
 
-let twoPlusTwo = () => {
-  return 2 + 2;
-}
-
-let b = twoPlusTwo();
-
-// Pasando valores como parametros
-
-let double = (num: number) => {
-  return num * 2;
-}
-
-let c = double(2);
-let d = double(6);
-// let e = double('webtoriales');
-// console.log(e);
-
-let concat = (a: string, b: string, reverse: boolean = false) => {
-  if (reverse) {
-    return b + a;
-  }
-  return a + b;
-}
-
-let result = concat('webtoriales', 'es genial');
+getChannelName(true);
+getChannelInfo({ name: 'hello' });
