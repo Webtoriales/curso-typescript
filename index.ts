@@ -1,6 +1,6 @@
 type ID = string | number;
 type Year = string | number;
-type Channel = {
+interface Channel {
   id: ID,
   name: string,
   subscribers: number,
@@ -31,3 +31,31 @@ getChannelName(456);
 getChannelName(webtoriales.id);
 getChannelInfo(webtoriales);
 subscribeToChannel(webtoriales);
+
+type PersonType = {
+  name: string
+}
+
+interface PersonInterface {
+  name: string
+}
+
+const person1: PersonType = { name: 'Maria' };
+const person2: PersonInterface = { name: 'Juana' };
+
+type SuperHuman = { powers: string[] } & PersonType;
+
+let superHuman: SuperHuman = {
+  name: 'peter parker',
+  powers: ['fuerza', 'sentido aracnido']
+}
+
+interface Alien extends PersonInterface { planet: string };
+
+let alien: Alien = {
+  name: 'marciano',
+  planet: 'marte'
+}
+
+alien = superHuman;
+superHuman = alien;
