@@ -40,22 +40,43 @@ interface PersonInterface {
   name: string
 }
 
-const person1: PersonType = { name: 'Maria' };
-const person2: PersonInterface = { name: 'Juana' };
+const person1: PersonType = { name: 'Natasha' };
+const person2: PersonInterface = { name: 'Tony' };
 
-type SuperHuman = { powers: string[] } & PersonType;
+type SuperHumanType = { powers: string[] } & PersonType;
 
-let superHuman: SuperHuman = {
-  name: 'peter parker',
+const superHuman: SuperHumanType = {
+  name: 'Peter Parker',
   powers: ['fuerza', 'sentido aracnido']
+};
+
+interface Alien extends PersonInterface {
+  planet: string
 }
 
-interface Alien extends PersonInterface { planet: string };
-
-let alien: Alien = {
+const alien: Alien = {
   name: 'marciano',
   planet: 'marte'
 }
 
-alien = superHuman;
-superHuman = alien;
+interface Pet {
+  name: string
+}
+
+interface Pet {
+  isCute: boolean
+}
+
+const myPet: Pet = {
+  name: 'Garfield',
+  isCute: false
+}
+
+
+type PetType = {
+  name: string
+}
+
+// type PetType = {
+//   isCute: boolean
+// }
