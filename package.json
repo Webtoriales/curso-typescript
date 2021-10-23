@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc index.ts"
+    "dev": "tsc --watch",
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",
